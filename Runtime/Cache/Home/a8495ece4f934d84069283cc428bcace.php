@@ -45,30 +45,32 @@
 	</div><!--/Banner--><!--Navigation + Search-->
 	<div class="fixed-width-wrapper border-radius-5px" id="navigation-bar">
 		<div id="g-navigation"><ul class="simple-drop-down-menu">
-		  <li class="home-page current border-radius-left-5px"><a href="index.html">首页</a></li>
-		  <li><a href="about.html" title="">公司简介</a></li>
-		  <li><a href="services.html" title="">道闸媒体形式</a>
-			<ul>
-			   <li><a href="services.html" title="">标准媒体</a></li>
-			   <li><a href="services1.html" title="">超级媒体</a></li>
+          <li class="home-page current border-radius-left-5px"><a href="<?php echo U('Index/index');?>">首页</a></li>
+          <li><a href="<?php echo U('About/about');?>" title="">公司简介</a></li>
+          <li><a href="<?php echo U('Chenei/showlist');?>" title="">广告预约</a>
+            <ul>
+               <li><a href="<?php echo U('Chenei/showlist');?>" title="">车内广告</a></li>
+               <li><a href="<?php echo U('Cheshen/showlist');?>" title="">车身广告</a></li>
+                <li><a href="<?php echo U('Zhanpai/showlist');?>" title="">站牌广告</a></li>
+            </ul>
+          </li>
+          <li><a href="<?php echo U('Youshi/youshi');?>" title="">媒体优势</a></li>
+          <li><a href="<?php echo U('Blog/blog');?>" title="">媒体资源</a></li>
+          <li><a href="<?php echo U('Poli/poli');?>" title="">营销政策</a></li>
+          <li><a href="<?php echo U('Contact/contact');?>" title="">联系我们</a></li>
+          <?php if(empty($_SESSION['userid'])) { ?>
+            <li class="denglu"><a href="<?php echo U('User/login');?>" title="">登录</a></li>
+            <li class=""><a href="<?php echo U('User/register');?>" title="">注册</a></li>
+          <?php } else { ?>
+            <li class="myname"><a href=""><?php echo (session('username')); ?></a></li>
+            <li class=""><a href="<?php echo U('Order/showlist');?>" title="">我的订单</a></li>
+            <li class=""><a href="<?php echo U('User/logout');?>" title="">注销</a></li>
+        <?php  } ?>
+            </div>
 
-		    </ul>
-		  </li>
-		  <li><a href="portfolio.html" title="">媒体优势</a></li>
-		  <li><a href="blog.html" title="">媒体资源</a>
-
-		  </li>
-		  <li><a href="poli.html" title="">营销政策</a></li>
-		  <li><a href="contact.html" title="">联系我们</a></li>
-			</ul></div>
-			  <div id="g-search">
-				<form action="" method="post"><div><input type="text" class="input-field border-radius-left-3px reset-text" value="Search here..."></div>
-				  <div><button type="submit" title="Search" class="sprite"><em>Search</em></button></div>
-				</form>
-	  </div>
-	</div><!--/Navigation + Search-->
+      </div>
+    </div><!--/Navigation + Search-->
   </div>
-</div><!--/Header--><!--Slider-->
 
 
 

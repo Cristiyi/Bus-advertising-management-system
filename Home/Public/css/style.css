@@ -152,7 +152,7 @@ a:hover{ text-decoration:none; color:#fff;}
 .con_left ul li a{ font-family:inherit; line-height:39px; font-size:12px;}
 .con_left ul li a:hover{ color:#900; font-size:12px;}
 
-.con_right{ float:right; width:830px;height:350px}
+.con_right{ float:right; width:830px;}
 .right_title{
 	font-family:inherit;
 	font-size:16px;
@@ -193,3 +193,4 @@ a:hover{ text-decoration:none; color:#fff;}
 	.pages strong{border:none;font-weight:700}
 	.cuspages{margin:5px 0px;;line-height:200%; clear:both; text-align:center;}
 	.cuspages .pages{display:inline;clear:none;margin-right:45px}
+

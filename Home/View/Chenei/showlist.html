@@ -57,53 +57,45 @@ tylesheet" type="text/css" href="{$Think.config.CSS_URL}/ie7.css"><![endif]-->
 
   .con_right {
     position: relative;
-
+    height: 400px;
   }
 
-
+  .font20 {
+    font-size: 20px;
+  }
 
 
 
 </style>
 </head>
-<body class="home"><!--Header-->
-<div class="full-width-wrapper" id="header">
-  <div class="full-width-wrapper" id="abstract-bg"><!--Banner-->
-    <div class="fixed-width-wrapper" id="banner">
-      <a href="index.html" title="" class="logo"><img src="{$Think.config.IMG_URL}/logo2.png" alt="Maxx - The Modern HTML template"></a>
-     <!--/Banner--> <!--<ul class="social-network">
-	    <li><a href="#" title="Facebook"><img src="{$Think.config.IMG_URL}/icons/facebook.png" alt=""></a></li>
-		<li><a href="#" title="Twitter"><img src="{$Think.config.IMG_URL}/icons/twitter.png" alt=""></a></li>
-		<li><a href="#" title="Delicious"><img src="{$Think.config.IMG_URL}/icons/delicious.png" alt=""></a></li>
-	  </ul>-->
-	</div><!--/Banner--><!--Navigation + Search-->
-	<div class="fixed-width-wrapper border-radius-5px" id="navigation-bar">
-		<div id="g-navigation"><ul class="simple-drop-down-menu">
-		  <li class="home-page current border-radius-left-5px"><a href="index.html">首页</a></li>
-		  <li><a href="about.html" title="">公司简介</a></li>
-		  <li><a href="services.html" title="">道闸媒体形式</a>
-			<ul>
-			   <li><a href="services.html" title="">标准媒体</a></li>
-			   <li><a href="services1.html" title="">超级媒体</a></li>
+<div class="fixed-width-wrapper border-radius-5px" id="navigation-bar">
+    <div id="g-navigation"><ul class="simple-drop-down-menu">
+          <li class="home-page current border-radius-left-5px"><a href="{:U('Index/index')}">首页</a></li>
+          <li><a href="{:U('About/about')}" title="">公司简介</a></li>
+          <li><a href="{:U('Chenei/showlist')}" title="">广告预约</a>
+            <ul>
+               <li><a href="{:U('Chenei/showlist')}" title="">车内广告</a></li>
+               <li><a href="{:U('Cheshen/showlist')}" title="">车身广告</a></li>
+                <li><a href="{:U('Zhanpai/showlist')}" title="">站牌广告</a></li>
+            </ul>
+          </li>
+          <li><a href="{:U('Youshi/youshi')}" title="">媒体优势</a></li>
+          <li><a href="{:U('Blog/blog')}" title="">媒体资源</a></li>
+          <li><a href="{:U('Poli/poli')}" title="">营销政策</a></li>
+          <li><a href="{:U('Contact/contact')}" title="">联系我们</a></li>
+          <?php if(empty($_SESSION['userid'])) { ?>
+            <li class="denglu"><a href="{:U('User/login')}" title="">登录</a></li>
+            <li class=""><a href="{:U('User/register')}" title="">注册</a></li>
+          <?php } else { ?>
+            <li class="myname"><a href="">{$Think.session.username}</a></li>
+            <li class=""><a href="{:U('Order/showlist')}" title="">我的订单</a></li>
+            <li class=""><a href="{:U('User/logout')}" title="">注销</a></li>
+        <?php   } ?>
+            </div>
 
-		    </ul>
-		  </li>
-		  <li><a href="portfolio.html" title="">媒体优势</a></li>
-		  <li><a href="blog.html" title="">媒体资源</a>
-
-		  </li>
-		  <li><a href="poli.html" title="">营销政策</a></li>
-		  <li><a href="contact.html" title="">联系我们</a></li>
-			</ul></div>
-			  <div id="g-search">
-				<form action="" method="post"><div><input type="text" class="input-field border-radius-left-3px reset-text" value="Search here..."></div>
-				  <div><button type="submit" title="Search" class="sprite"><em>Search</em></button></div>
-				</form>
-	  </div>
-	</div><!--/Navigation + Search-->
+      </div>
+    </div><!--/Navigation + Search-->
   </div>
-</div><!--/Header--><!--Slider-->
-
 
 
 
@@ -113,9 +105,9 @@ tylesheet" type="text/css" href="{$Think.config.CSS_URL}/ie7.css"><![endif]-->
   <div class="midimage"><img src="{$Think.config.IMG_URL}/chenei1.jpg" width="980" height="300" /></div>
     <div class="con_left">
       <ul>
-        <li><a href="services.html" >标准媒体</a></li>
-        <li><a href="services1.html" style="font-weight:bold;">车内广告</a></li>
-
+        <li><a href="{:U('Chenei/showlist')}" style="font-weight:bold;">车内广告</a></li>
+        <li><a href="{:U('Cheshen/showlist')}" style="font-weight:bold;">车身广告</a></li>
+        <li><a href="{:U('Zhanpai/showlist')}" style="font-weight:bold;">站牌广告</a></li>
       </ul>
     </div>
 	<!--/下部文字部开始-->
@@ -126,17 +118,17 @@ tylesheet" type="text/css" href="{$Think.config.CSS_URL}/ie7.css"><![endif]-->
 	  <div class="media-body">
 	  <foreach name="info" item="v">
         <div class="orderlist" style="text-decoration:none;width=500px;border:1px;">
-        <h4 class="toph4">{$v.description}</h4>
-        <p>
-          价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：<span>{$v.price}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <h4 class="toph4 font20">{$v.description}</h4>
+        <p class="font20">
+          价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：<span class="font20">{$v.price}</span>&nbsp;&nbsp;&nbsp;&nbsp;
         </p>
-        <p>
+        <p class="font20">
          位&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;置：
-          <span>{$v.location}</span>
+          <span class="font20">{$v.location}</span>
         </p>
-        <p>
+        <p class="font20">
           状 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态：
-          <span >
+          <span class="font20">
             {$v.status}
             <!-- <span ng-if="!$last">、</span> -->
           </span>

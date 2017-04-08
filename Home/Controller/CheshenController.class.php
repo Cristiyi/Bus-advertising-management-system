@@ -13,7 +13,7 @@ class CheshenController extends Controller {
 		$count = $place -> where("status='未租出' and catename='车身广告'") -> count();
 
 		// $data = $place -> query("select * from __PREFIX__place where status='未租出' and catename='车身广告'");
-		$page = getpage($count,3);
+		$page = getpage($count,2);
         // $show = $Page->show();// 分页显示输出
 
 		$list = $place -> field(true) -> where("status='未租出' and catename='车身广告'") -> order('placeid') -> limit($page->firstRow, $page->listRows)->select();
