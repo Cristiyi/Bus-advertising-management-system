@@ -6,9 +6,6 @@
 <meta name="keywords" content="道闸广告,武汉道闸广告,恒盛文广,广告道闸" />
 <meta name="description" content="道闸广告,武汉道闸广告,恒盛文广,广告道闸" />
 <title>恒盛文广</title>
-<link href="{$Think.config.CSS_URL}/bootstrap.min.css" rel="stylesheet">
-<link href="{$Think.config.CSS_URL}/dashboard.css" rel="stylesheet">
-<link href="{$Think.config.CSS_URL}/mypage.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{$Think.config.CSS_URL}/reset.css">
 <link rel="stylesheet" type="text/css" href="{$Think.config.CSS_URL}/base.css">
 <link rel="stylesheet" type="text/css" href="{$Think.config.CSS_URL}/tipTip.css">
@@ -24,46 +21,15 @@
 <script type="text/javascript" src="{$Think.config.JS_URL}/cufon-replace.js"></script>
 <script type="text/javascript" src="{$Think.config.JS_URL}/scripts.js"></script>
 <script type="text/javascript" src="{$Think.config.JS_URL}/custom.js"></script>
-<script type="text/javascript" src="{$Think.config.JS_URL}/shortcode.js"></script><!--[if IE 7]><link rel="s
-tylesheet" type="text/css" href="{$Think.config.CSS_URL}/ie7.css"><![endif]-->
+<script type="text/javascript" src="{$Think.config.JS_URL}/shortcode.js"></script><!--[if IE 7]><link rel="stylesheet" type="text/css" href="{$Think.config.CSS_URL}/ie7.css"><![endif]-->
 <style type="text/css">
-.order {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  color:#fff;
-  background-color:#31b0d5;
-  border-color:#269abc;
-  text-decoration: none;
-  }
-
-    .toph4 {
-        margin-top:10px;
-    }
-  .pages{
-    position:absolute;
-    left:40%;
-    bottom:0px;
-  }
-
-  .con_right {
-    position: relative;
-
-  }
-
-
-
-
-
+<!--
+.STYLE6 {
+	color: #900;
+	font-size: 16px;
+	font-weight: bold;
+}
+-->
 </style>
 </head>
 <body class="home"><!--Header-->
@@ -110,45 +76,23 @@ tylesheet" type="text/css" href="{$Think.config.CSS_URL}/ie7.css"><![endif]-->
 <!--/中部开始-->
 <div class="mid">
   <div class="danei mid">
-  <div class="midimage"><img src="{$Think.config.IMG_URL}/chenei1.jpg" width="980" height="300" /></div>
+  <div class="midimage"><img src="{$Think.config.IMG_URL}/blog1.png" width="980" height="300" /></div>
     <div class="con_left">
       <ul>
-        <li><a href="services.html" >标准媒体</a></li>
-        <li><a href="services1.html" style="font-weight:bold;">车内广告</a></li>
+        <li><a href="blog.html" style="font-weight:bold;">媒体资源</a></li>
+        <li><a href="blog.html" >合作伙伴</a></li>
 
       </ul>
     </div>
 	<!--/下部文字部开始-->
-    <div class="con_right media media-left">
-      <div class="right_title">车内广告</div>
-	  <!-- div class="biaozhun_image"><img src="{$Think.config.IMG_URL}/chenei2.jpg"  width="500" height="200"/></div> -->
+    <div class="con_right">
+      <div class="right_title">媒体资源：武汉点位图</div>
+	  <div class="biaozhun_image"><img src="{$Think.config.IMG_URL}/dianwei.png"  /></div>
+	  <div class="right_title">武汉合作伙伴</div>
+	  <div class="biaozhun_image"><img src="{$Think.config.IMG_URL}/hezuo.png"  /></div>
 	<!--/中部开始  <div class="tpwz">-->
-	  <div class="media-body">
-	  <foreach name="info" item="v">
-        <div class="orderlist" style="text-decoration:none;width=500px;border:1px;">
-        <h4 class="toph4">{$v.description}</h4>
-        <p>
-          价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：<span>{$v.price}</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        </p>
-        <p>
-         位&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;置：
-          <span>{$v.location}</span>
-        </p>
-        <p>
-          状 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态：
-          <span >
-            {$v.status}
-            <!-- <span ng-if="!$last">、</span> -->
-          </span>
-        </p>
-        </div>
-        <!-- <a href="{:U('Order/tianjia?id='.$v[placeid]&&'type='.$v[catename])}" target="_blank" class="order">预约</a> -->
-        <a href="{:U('Order/tianjia',array('id'=>$v[placeid],'type'=>$v[catename],'location'=>$v[location],'price'=>$v[price]))}" target="_blank" class="order">预约</a>
-        </foreach>
-	 </div>
-    <div class="pages">
-    {$page}
-    </div>
+
+
      <!--/中部开始  <div class="right_con">  -->
 
 

@@ -6,9 +6,6 @@
 <meta name="keywords" content="道闸广告,武汉道闸广告,恒盛文广,广告道闸" />
 <meta name="description" content="道闸广告,武汉道闸广告,恒盛文广,广告道闸" />
 <title>恒盛文广</title>
-<link href="{$Think.config.CSS_URL}/bootstrap.min.css" rel="stylesheet">
-<link href="{$Think.config.CSS_URL}/dashboard.css" rel="stylesheet">
-<link href="{$Think.config.CSS_URL}/mypage.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{$Think.config.CSS_URL}/reset.css">
 <link rel="stylesheet" type="text/css" href="{$Think.config.CSS_URL}/base.css">
 <link rel="stylesheet" type="text/css" href="{$Think.config.CSS_URL}/tipTip.css">
@@ -24,46 +21,22 @@
 <script type="text/javascript" src="{$Think.config.JS_URL}/cufon-replace.js"></script>
 <script type="text/javascript" src="{$Think.config.JS_URL}/scripts.js"></script>
 <script type="text/javascript" src="{$Think.config.JS_URL}/custom.js"></script>
-<script type="text/javascript" src="{$Think.config.JS_URL}/shortcode.js"></script><!--[if IE 7]><link rel="s
-tylesheet" type="text/css" href="{$Think.config.CSS_URL}/ie7.css"><![endif]-->
+<script type="text/javascript" src="{$Think.config.JS_URL}/shortcode.js"></script><!--[if IE 7]><link rel="stylesheet" type="text/css" href="{$Think.config.IMG_URL}/ie7.css"><![endif]-->
 <style type="text/css">
-.order {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  color:#fff;
-  background-color:#31b0d5;
-  border-color:#269abc;
-  text-decoration: none;
-  }
-
-    .toph4 {
-        margin-top:10px;
-    }
-  .pages{
-    position:absolute;
-    left:40%;
-    bottom:0px;
-  }
-
-  .con_right {
-    position: relative;
-
-  }
-
-
-
-
-
+<!--
+.STYLE5 {
+	font-size: 30px;
+	color: #333333;
+	margin: 10 0 10 0;
+}
+.STYLE6 {color: #FF0000}
+.STYLE8 {font-size: 30px; color: #333333; margin: 10 0 10 0; font-weight: bold; }
+.STYLE9 {font-size: 24px}
+.STYLE10 {
+	font-size: 24px;
+	font-weight: bold;
+}
+-->
 </style>
 </head>
 <body class="home"><!--Header-->
@@ -85,16 +58,20 @@ tylesheet" type="text/css" href="{$Think.config.CSS_URL}/ie7.css"><![endif]-->
 			<ul>
 			   <li><a href="services.html" title="">标准媒体</a></li>
 			   <li><a href="services1.html" title="">超级媒体</a></li>
-
 		    </ul>
 		  </li>
 		  <li><a href="portfolio.html" title="">媒体优势</a></li>
 		  <li><a href="blog.html" title="">媒体资源</a>
-
+			<ul><li><a href="blog.html" title="">Blog post</a></li>
+				<li><a href="blog-detail.html" title="">Single posts</a></li>
+				<li><a href="full-width.html" title="">Full-Width</a></li>
+				<li><a href="short-code.html" title="">Shortcode</a></li>
+			</ul>
 		  </li>
-		  <li><a href="poli.html" title="">营销政策</a></li>
+		  <li><a href="contact.html" title="">营销政策</a></li>
 		  <li><a href="contact.html" title="">联系我们</a></li>
-			</ul></div>
+			</ul>
+		</div>
 			  <div id="g-search">
 				<form action="" method="post"><div><input type="text" class="input-field border-radius-left-3px reset-text" value="Search here..."></div>
 				  <div><button type="submit" title="Search" class="sprite"><em>Search</em></button></div>
@@ -103,57 +80,30 @@ tylesheet" type="text/css" href="{$Think.config.CSS_URL}/ie7.css"><![endif]-->
 	</div><!--/Navigation + Search-->
   </div>
 </div><!--/Header--><!--Slider-->
-
-
-
-
 <!--/中部开始-->
 <div class="mid">
   <div class="danei mid">
-  <div class="midimage"><img src="{$Think.config.IMG_URL}/chenei1.jpg" width="980" height="300" /></div>
+  <div class="midimage"><img src="{$Think.config.IMG_URL}/lou.png" width="980" height="300" />  </div>
     <div class="con_left">
       <ul>
-        <li><a href="services.html" >标准媒体</a></li>
-        <li><a href="services1.html" style="font-weight:bold;">车内广告</a></li>
+        <li><a href="http://www.szdzgg.com/?about/GongSiJianJie.html" style="font-weight:bold;">公司简介</a></li>
 
       </ul>
     </div>
-	<!--/下部文字部开始-->
-    <div class="con_right media media-left">
-      <div class="right_title">车内广告</div>
-	  <!-- div class="biaozhun_image"><img src="{$Think.config.IMG_URL}/chenei2.jpg"  width="500" height="200"/></div> -->
-	<!--/中部开始  <div class="tpwz">-->
-	  <div class="media-body">
-	  <foreach name="info" item="v">
-        <div class="orderlist" style="text-decoration:none;width=500px;border:1px;">
-        <h4 class="toph4">{$v.description}</h4>
-        <p>
-          价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：<span>{$v.price}</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        </p>
-        <p>
-         位&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;置：
-          <span>{$v.location}</span>
-        </p>
-        <p>
-          状 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态：
-          <span >
-            {$v.status}
-            <!-- <span ng-if="!$last">、</span> -->
-          </span>
-        </p>
-        </div>
-        <!-- <a href="{:U('Order/tianjia?id='.$v[placeid]&&'type='.$v[catename])}" target="_blank" class="order">预约</a> -->
-        <a href="{:U('Order/tianjia',array('id'=>$v[placeid],'type'=>$v[catename],'location'=>$v[location],'price'=>$v[price]))}" target="_blank" class="order">预约</a>
-        </foreach>
-	 </div>
-    <div class="pages">
-    {$page}
+    <div class="con_right">
+      <div class="right_title">公司简介</div>
+      <div class="right_con">
+        <p> <span style="font-size:14px;">武汉恒盛文广文化传媒有限公司系恒生创投集团旗下专业从事广告设计、制作、发布、媒体开发、企业策划、活动策划等业务的传媒公司，集团业务主要包括：医院管理投资、月子会所管理投资、互联网媒体开发及代理、景观园林设计、装饰设计施工、企业管理投资咨询等。 
+</span><br />
+            <br />
+            <span style="font-size:14px;">公司由国内投资管理、媒体运营、广告销售等领域资深人士联合上海、天津、成都、杭州、长沙、重庆、武汉、深圳、温州等中国十几个城市停车场媒体运营商共同发起投资组建，是中国目前规模最大、最专业的停车场媒体运营商；同时已启动深圳、杭州、成都、武汉、天津、重庆、郑州、沈阳、长沙、温州等十个区域运营中心，并对包括北京、上海、广州、无锡、苏州、宁波等在内的十六个区域停车场近20000块媒体资源进行了有效整合，真正实现了全国停车场媒体资源的联网发布</span><span style="font-size:14px;">、佛山、杭州、济南、郑州、西安、太原、沈阳、南京等。</span><br />
+            <br />
+            <span style="font-size:14px;">我公司现有员工200余人，由高素质的人才构建的公司核心技术团队，推动公司顺利通过了国家级媒体企业的认定</span><span style="font-size:14px;">。</span><br />
+            <br />
+            <span style="font-size:14px;">企业使命：以创新科技缔造安全、智能、高效的道闸广告媒体。</span><br />
+            <span style="font-size:14px;">核心价值观：持续创新、精益求精、务实进取、发展道闸广告媒体事业，创造美好明天！</span> </p>
+      </div>
     </div>
-     <!--/中部开始  <div class="right_con">  -->
-
-
-    </div><!--/下部文字部结束-->
-
   </div>
 </div>
 

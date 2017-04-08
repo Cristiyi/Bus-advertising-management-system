@@ -6,9 +6,6 @@
 <meta name="keywords" content="道闸广告,武汉道闸广告,恒盛文广,广告道闸" />
 <meta name="description" content="道闸广告,武汉道闸广告,恒盛文广,广告道闸" />
 <title>恒盛文广</title>
-<link href="{$Think.config.CSS_URL}/bootstrap.min.css" rel="stylesheet">
-<link href="{$Think.config.CSS_URL}/dashboard.css" rel="stylesheet">
-<link href="{$Think.config.CSS_URL}/mypage.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{$Think.config.CSS_URL}/reset.css">
 <link rel="stylesheet" type="text/css" href="{$Think.config.CSS_URL}/base.css">
 <link rel="stylesheet" type="text/css" href="{$Think.config.CSS_URL}/tipTip.css">
@@ -24,46 +21,16 @@
 <script type="text/javascript" src="{$Think.config.JS_URL}/cufon-replace.js"></script>
 <script type="text/javascript" src="{$Think.config.JS_URL}/scripts.js"></script>
 <script type="text/javascript" src="{$Think.config.JS_URL}/custom.js"></script>
-<script type="text/javascript" src="{$Think.config.JS_URL}/shortcode.js"></script><!--[if IE 7]><link rel="s
-tylesheet" type="text/css" href="{$Think.config.CSS_URL}/ie7.css"><![endif]-->
+<script type="text/javascript" src="{$Think.config.JS_URL}/shortcode.js"></script><!--[if IE 7]><link rel="stylesheet" type="text/css" href="{$Think.config.CSS_URL}/ie7.css"><![endif]-->
 <style type="text/css">
-.order {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  color:#fff;
-  background-color:#31b0d5;
-  border-color:#269abc;
-  text-decoration: none;
-  }
-
-    .toph4 {
-        margin-top:10px;
-    }
-  .pages{
-    position:absolute;
-    left:40%;
-    bottom:0px;
-  }
-
-  .con_right {
-    position: relative;
-
-  }
-
-
-
-
-
+<!--
+.STYLE6 {
+	color: #900;
+	font-size: 16px;
+	font-weight: bold;
+}
+.STYLE8 {color: #900; font-size: 14px; font-weight: bold; }
+-->
 </style>
 </head>
 <body class="home"><!--Header-->
@@ -110,45 +77,36 @@ tylesheet" type="text/css" href="{$Think.config.CSS_URL}/ie7.css"><![endif]-->
 <!--/中部开始-->
 <div class="mid">
   <div class="danei mid">
-  <div class="midimage"><img src="{$Think.config.IMG_URL}/chenei1.jpg" width="980" height="300" /></div>
+  <div class="midimage"><img src="{$Think.config.IMG_URL}/ys1.png" width="980" height="300" /></div>
     <div class="con_left">
       <ul>
-        <li><a href="services.html" >标准媒体</a></li>
-        <li><a href="services1.html" style="font-weight:bold;">车内广告</a></li>
+        <li><a href="sub2.html" >广告道闸的优势</a></li>
+
 
       </ul>
     </div>
 	<!--/下部文字部开始-->
-    <div class="con_right media media-left">
-      <div class="right_title">车内广告</div>
-	  <!-- div class="biaozhun_image"><img src="{$Think.config.IMG_URL}/chenei2.jpg"  width="500" height="200"/></div> -->
+    <div class="con_right">
+      <div class="right_title">广告道闸的优势</div>
+
 	<!--/中部开始  <div class="tpwz">-->
-	  <div class="media-body">
-	  <foreach name="info" item="v">
-        <div class="orderlist" style="text-decoration:none;width=500px;border:1px;">
-        <h4 class="toph4">{$v.description}</h4>
-        <p>
-          价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：<span>{$v.price}</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        </p>
-        <p>
-         位&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;置：
-          <span>{$v.location}</span>
-        </p>
-        <p>
-          状 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态：
-          <span >
-            {$v.status}
-            <!-- <span ng-if="!$last">、</span> -->
-          </span>
-        </p>
-        </div>
-        <!-- <a href="{:U('Order/tianjia?id='.$v[placeid]&&'type='.$v[catename])}" target="_blank" class="order">预约</a> -->
-        <a href="{:U('Order/tianjia',array('id'=>$v[placeid],'type'=>$v[catename],'location'=>$v[location],'price'=>$v[price]))}" target="_blank" class="order">预约</a>
-        </foreach>
+	  <div class="jianjie1">
+	  <ul>
+
+	     <li><span class="STYLE8"><img src="{$Think.config.IMG_URL}/li2.png" width="70" height="40">1.广告受众质量高:</span>均为市区最具消费能力的中高收入群体。</li>
+		 <li><span class="STYLE8"><img src="{$Think.config.IMG_URL}/li2.png" width="70" height="40">2.选择性和针对性强:</span>根据广告主对其广告受众的选择，道闸广告直接将广告信息传递给真正的受众，具有强烈的选择性和针对性。</li>
+         <li><span class="STYLE8"><img src="{$Think.config.IMG_URL}/li2.png" width="70" height="40">1.广告持续时间长:</span>一个30秒的电视广告，它的信息在30秒后荡然无存。道闸广告则明显不同，在受传者作出最后决定之前，可以反复多次读取广告信息。 </li>
+         <li><span class="STYLE8"><img src="{$Think.config.IMG_URL}/li2.png" width="70" height="40">1.具有强迫受众读取的特性:</span>不同于报纸杂志广告，道闸广告信息直接面对着进出大门的司机和行人，可以无限次进入他们的眼球从而影响其购买行为。</li>
+		 <li><span class="STYLE8"><img src="{$Think.config.IMG_URL}/li2.png" width="70" height="40">1.高效的广告传播:</span>在投放广告之前，可以参照小区人口统计因素和地理区域因素选择受传对象以保证最大限度地使广告讯息为受传对象所接受，真正作到有的放矢。每天平均5次的阅读频次，广告信息准确、集中、反复地定向传播。</li>
+		 <li><span class="STYLE8"><img src="{$Think.config.IMG_URL}/li2.png" width="70" height="40">1.具有可测定性:</span>发布广告之后，可以借助产品销售数量的增减变化情况及变化幅度来了解广告信息传出之后产生的效果，从而选择以后的投放小区。这一优势超过了其他广告媒体。</li>
+
+
+
+
+		 <li style="line-height:150%"></li>
+	    </ul>
 	 </div>
-    <div class="pages">
-    {$page}
-    </div>
+
      <!--/中部开始  <div class="right_con">  -->
 
 
