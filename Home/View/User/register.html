@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>注册</title>
+	<meta author="zrong.me 曾荣">
+	<link rel="stylesheet" type="text/css" href="{$Think.config.CSS_URL}/register-login.css">
+</head>
+<body>
+<div id="box"></div>
+<div class="cent-box register-box">
+	<div class="cent-box-header">
+		<h1 class="main-title hide">公交广告预约</h1>
+		<h2 class="sub-title">热爱生活——广告你我他</h2>
+	</div>
+
+	<div class="cont-main clearfix">
+		<div class="index-tab">
+			<div class="index-slide-nav">
+				<a href="{:U('login')}">登录</a>
+				<a href="{:U('register')}" class="active">注册</a>
+				<div class="slide-bar slide-bar1"></div>				
+			</div>
+		</div>
+       
+		<div class="login form">
+			 <form action="__SELF__" method="post" class="group">
+				<div class="group-ipt email">
+					<input type="email" name="useremail" id="email" class="ipt" placeholder="邮箱地址" required>
+				</div>
+				<div class="group-ipt user">
+					<input type="text" name="username" id="user" class="ipt" placeholder="选择一个用户名" required>
+				</div>
+				<div class="group-ipt user">
+					<input type="text" name="userfname" id="user" class="ipt" placeholder="请填写姓名" required>
+				</div>
+				<div class="group-ipt password">
+					<input type="password" name="userpassword" id="password" class="ipt" placeholder="设置登录密码" required>
+				</div>
+				<div class="group-ipt password1">
+					<input type="password" name="reuserpassword" id="password1" class="ipt" placeholder="重复密码" required>
+				</div>
+				<div class="group-ipt companyname">
+					<input type="text" name="usercomname" id="usercomname" class="ipt" placeholder="公司名称" required>
+				</div>
+				<div class="button">
+		    		<input type="submit" value="注册" class="login-btn register-btn" id="button"/>
+				</div>
+			</form>
+		</div>
+		
+
+		
+	</div>
+</div>
+
+<div class="footer">
+	<p>广告之家</p>
+	<p>Designed By DFF & <a href="zrong.me">mycodes.net</a> 2016</p>
+</div>
+
+<script src='{$Think.config.JS_URL}/particles.js' type="text/javascript"></script>
+<script src='{$Think.config.JS_URL}/background.js' type="text/javascript"></script>
+<script src='{$Think.config.JS_URL}/jquery.min.js' type="text/javascript"></script>
+<script src='{$Think.config.JS_URL}/layer/layer.js' type="text/javascript"></script>
+<script>
+	
+	$("#remember-me").click(function(){
+		var n = document.getElementById("remember-me").checked;
+		if(n){
+			$(".zt").show();
+		}else{
+			$(".zt").hide();
+		}
+	})
+</script>
+</body>
+</html>

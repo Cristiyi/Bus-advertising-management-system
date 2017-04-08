@@ -1,0 +1,250 @@
+/*
+ * Base structure
+ */
+
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+
+.navbar-fixed-top {
+  border: 0;
+}
+
+
+/*
+ * Sidebar
+ */
+
+
+/* Hide for mobile, show later */
+
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+
+/* Sidebar navigation */
+
+.nav-sidebar {
+  margin-right: -21px;
+  20px padding + 1px border
+  margin-bottom: 20px;*/
+  margin-left: -20px;
+}
+
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+.list-group {
+  margin-left: 20px
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.placeholders h4 {
+  margin-bottom: 0;
+}
+
+.placeholder {
+  margin-bottom: 20px;
+}
+
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.list-group .media {
+  margin-top: 0;
+}
+
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  -webkit-animation: sk-rotate 2.0s infinite linear;
+  animation: sk-rotate 2.0s infinite linear;
+}
+
+.dot1,
+.dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  border-radius: 100%;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate {
+  100% {
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+@keyframes sk-rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0.0)
+  }
+  50% {
+    -webkit-transform: scale(1.0)
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  }
+  50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 2000;
+}
+
+
+.pager a{
+  cursor: pointer;
+}
+
+
+li { list-style-type: none }
+
+
+.city_info { padding:48px 0}
+.city_info .city_time { float:left; width:340px}
+.city_info .city_temper { float:right; width:340px}
+.city_info .today { font-size:28px; text-align:right; color:#fff; border-bottom:2px solid #fff}
+.city_info .today i { float:left}
+.city_info .limit { padding:2px 0 0; font-size:18px; color:#fff}
+.city_info .temper { float:left; margin:0 0 0 15px; padding:0 0 0 15px; border-left:1px solid #fff; height:62px; line-height: 62px; font-size: 26px; color:#fff;}
+a{text-decoration: none}
+.ind_news { margin:80px auto 0; max-width:1280px}
+.ind_news > .image { float:left }
+.ind_news > .image img { width:533px; height:610px}
+.ind_news > .cont { float:left; width:707px; height:610px; background:#0172c2}
+/*.ind_news > .cont > .inner { padding:0 0 0 56px}*/
+
+.ind_news .news_tab li { float:left; width:162px; height:45px; text-align:center; line-height:45px; font-size:26px; cursor:pointer; font-weight:bold; color:#fff}
+.ind_news .news_tab li.on { font-weight:100; background:#0095ff}
+.ind_news  .news_cont { position:relative; padding:26px 0 0; width:536px; color:#fff}
+.ind_news  .news_cont a { color:#fff}
+.ind_news  .news_cont .list { position:absolute; left:0; top:26px}
+/*.ind_news  .news_cont .item_cont { height:374px}*/
+.ind_news  .news_cont .list li { padding:0 0 27px 0; border-bottom:1px solid #48a1e1}
+.ind_news  .news_cont .list li + li +li { border:none}
+.ind_news  .news_cont .title { padding:23px 0 13px; font-size:18px; font-weight:bold}
+.ind_news  .news_cont .text { line-height:20px}
+
+.page_ul{margin:0 auto; text-align:center;}
+
+.page_ul .prev-btn { background: url(../img/bus_left01.png) no-repeat;display:inline-block;  width:11px; height:16px;margin-bottom:-3px; }
+.page_ul .next-btn {  background: url(../img/bus_right01.png) no-repeat;display:inline-block; width:11px; height:16px;margin-bottom:-3px; }
+.pager_item { padding:20px 0 0; font-size:0; text-align:center;display:inline-block;}
+.pager_item li { margin:0 8px; cursor:pointer; display:inline-block; *display:inline; width:9px; height:9px; background:url(../img/pager_item.png) no-repeat}
+.pager_item li.on,.pager_item li:hover { background:url(../img/pager_item.png) no-repeat}

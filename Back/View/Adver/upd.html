@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>修改广告</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <link href="{$Think.config.BACK_CSS_URL}/mine.css" type="text/css" rel="stylesheet">
+        <link href="{$Think.config.BACK_CSS_URL}/bootstrap.min.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css">
+
+        <style>
+
+        .back {
+          position: absolute;
+          top: -5px;
+          right: 100px;
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="div_head">
+            <span>
+                <span style="float:left">当前位置是：广告管理-》修改广告信息</span>
+                <span style="float:right;margin-right: 8px;font-weight: bold">
+                    <a style="text-decoration: none" href="{:U('showlist')}" class="back"><button type="button" class="btn btn-info btn-sm">返回</button></a>
+                </span>
+            </span>
+        </div>
+        <div></div>
+
+        <div style="font-size: 13px;margin: 10px 5px" class="form-group">
+            <form action="__SELF__" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="adverid" value="{$info.adverid}"></input>
+            <table class="table table-striped" width="100%" id="general-tab-tb">
+                <tr>
+                    <td>广告编号</td>
+                    <td><input type="text" name="adverno" value="{$info.adverno}" /></td>
+                </tr>
+                <tr>
+                    <td>广告分类</td>
+                    <td>
+                        <select name="catename">
+                            <foreach name="cateinfo" item="v">
+                                <equal name="info[catename]" value="$v[catename]">
+                                    <option value="{$v.catename}" selected="selected">
+                                <else />
+                                    <option value="{$v.catename}">
+                                </equal>
+                                {$v.catename}</option>
+                            </foreach>
+                        </select>
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td>商品品牌</td>
+                    <td>
+                        <select name="f_goods_brand_id">
+                            <option>请选择</option>
+                            <option>苹果</option>
+                            <option>诺基亚</option>
+                            <option>HTC</option>
+                            <option>摩托罗拉</option>
+                        </select>
+                    </td>
+                </tr> -->
+                <tr>
+                <tr>
+                    <td>广告图片</td>
+                    <td><input type="file" name="adverimg_upd"/></td>
+                </tr>
+                    <td>开始时间</td>
+                    <td><input type="text" name="starttime" value="{$info.starttime}" /></td>
+                </tr>
+                </tr>
+                    <td>结束时间</td>
+                    <td><input type="text" name="endtime" value="{$info.endtime}" /></td>
+                </tr>
+                </tr>
+                    <td>广告位编号</td>
+                    <td><input type="text" name="placeno" value="{$info.placeno}" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="button" class="btn btn-success" onclick="submit()"><i class="fa fa-pencil"></i>修改</button>
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </body>
+</html>

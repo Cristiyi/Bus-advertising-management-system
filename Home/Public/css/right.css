@@ -1,0 +1,83 @@
+/*
+* @Author: Administrator
+* @Date:   2017-03-31 00:53:44
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-04-01 00:40:57
+*/
+li { list-style-type: none }
+
+
+.city_info { padding:48px 0}
+.city_info .city_time { float:left; width:340px}
+.city_info .city_temper { float:right; width:340px}
+.city_info .today { font-size:28px; text-align:right; color:#fff; border-bottom:2px solid #fff}
+.city_info .today i { float:left}
+.city_info .limit { padding:2px 0 0; font-size:18px; color:#fff}
+.city_info .temper { float:left; margin:0 0 0 15px; padding:0 0 0 15px; border-left:1px solid #fff; height:62px; line-height: 62px; font-size: 26px; color:#fff;}
+a{text-decoration: none}
+.ind_news { margin:80px auto 0; max-width:1280px}
+.ind_news > .image { float:left }
+.ind_news > .image img { width:533px; height:610px}
+.ind_news > .cont { float:left; width:707px; height:610px; background:#0172c2}
+/*.ind_news > .cont > .inner { padding:0 0 0 56px}*/
+
+.ind_news .news_tab li { float:left; width:162px; height:45px; text-align:center; line-height:45px; font-size:26px; cursor:pointer; font-weight:bold; color:#fff}
+.ind_news .news_tab li.on { font-weight:100; background:#0095ff}
+.ind_news  .news_cont { position:relative; padding:26px 0 0; width:536px; color:#fff}
+.ind_news  .news_cont a { color:#fff}
+.ind_news  .news_cont .list { position:absolute; left:0; top:26px}
+/*.ind_news  .news_cont .item_cont { height:374px}*/
+.ind_news  .news_cont .list li { padding:0 0 27px 0; border-bottom:1px solid #48a1e1}
+.ind_news  .news_cont .list li + li +li { border:none}
+.ind_news  .news_cont .title { padding:23px 0 13px; font-size:18px; font-weight:bold}
+.ind_news  .news_cont .text { line-height:20px}
+
+.page_ul{margin:0 auto; text-align:center;}
+
+.page_ul .prev-btn { background: url(../img/bus_left01.png) no-repeat;display:inline-block;  width:11px; height:16px;margin-bottom:-3px; }
+.page_ul .next-btn {  background: url(../img/bus_right01.png) no-repeat;display:inline-block; width:11px; height:16px;margin-bottom:-3px; }
+.pager_item { padding:20px 0 0; font-size:0; text-align:center;display:inline-block;}
+.pager_item li { margin:0 8px; cursor:pointer; display:inline-block; *display:inline; width:9px; height:9px; background:url(../img/pager_item.png) no-repeat}
+.pager_item li.on,.pager_item li:hover { background:url(../img/pager_item.png) no-repeat}
+
+
+
+#scrollPics{
+    height: 511px;
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position:relative;
+}
+.num{
+    position:absolute;
+    left:45%;
+    bottom:5px;
+}
+.num li{
+	margin-right:10px;
+}
+#scrollPics .num li{
+    float: left;
+    color: #FF7300;
+    text-align: center;
+    line-height: 16px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 3px 1px;
+    border: 1px solid #FF7300;
+    background-color: #fff;
+}
+#scrollPics .num li.numon{
+    color: #fff;
+    line-height: 21px;
+    width: 21px;
+    height: 21px;
+    font-size: 21px;
+    margin: 0 1px;
+    border: 0;
+    background-color: #FF7300;
+    font-weight: bold;
+}
