@@ -40,7 +40,7 @@ class OrderController extends Controller {
 
     public function agree() {
 
-    	require_once 'D:\phpStudy\WWW\zjkgj\gongjiao\Plugin\PHPMailer\class.phpmailer.php';
+    	require_once 'D:\WWW\zhangjiakou\bus\Plugin\PHPMailer\class.phpmailer.php';
     	$mail = new \PHPMailer();
 
     	$orderid = $_REQUEST['id'];
@@ -68,7 +68,7 @@ class OrderController extends Controller {
     	$mail -> FromName = "张家口公交公司广告业务部";
 
     	$mail -> AddAddress("$email","$name");
-    	
+
 
     	$mail -> IsHTML(true);
 

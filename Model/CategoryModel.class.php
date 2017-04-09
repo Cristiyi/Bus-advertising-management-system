@@ -5,7 +5,7 @@ use Think\Model;
 
 class CategoryModel extends Model {
 
-    
+
     function fetchData() {
 
         $total = $this -> count();
@@ -27,4 +27,12 @@ class CategoryModel extends Model {
 
 	}
 
-} 
+    protected $_validate = array(
+
+        array('cateno','require','此项为必填项'),
+        array('cateno','','广告编号已存在',0,'unique',1),
+        array('catename','require','此项为必填项'),
+
+        );
+
+}

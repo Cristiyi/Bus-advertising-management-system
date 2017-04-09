@@ -29,10 +29,10 @@ class AdverController extends Controller {
 
             $data = $adver -> create();
 
-            if($adver -> relation(true) -> add($data)) {
+            if($adver -> add($data)) {
             	$this -> success('添加广告成功',U('showlist'),2);
             } else{
-            	$this -> error('添加广告失败',U('tianjia'),2);
+            	$this -> error($adver->getError(),U('tianjia'),2);
             }
 
         } else{

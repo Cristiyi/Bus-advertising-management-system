@@ -20,16 +20,30 @@ class PlaceModel extends RelationModel {
     //     exit;
 
     // }
+    //
+
     protected $_link = array(
 
         'Adver' => array(
-                
+
                 'mapping_type' => HAS_ONE,
                 'foreigh_key' => 'adverid',
                 'mapping_name' => 'adver',
                 'mapping_fields' => 'adverno'
 
             ),
+
+        );
+
+    protected $_validate = array(
+
+        array('placeno','require','此项为必填项'),
+        array('placeno','','广告编号已存在',0,'unique',1),
+        array('location','require','此项为必填项'),
+        array('status','require','此项为必填项'),
+        array('catename','require','此项为必填项'),
+        array('price','require','此项为必填项'),
+        array('description','require','此项为必填项'),
 
         );
 
@@ -54,6 +68,6 @@ class PlaceModel extends RelationModel {
 
 	}
 
-    
+
 
 }

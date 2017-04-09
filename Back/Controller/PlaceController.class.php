@@ -6,7 +6,7 @@ use Think\Controller;
 class PlaceController extends Controller {
 
     public function showlist() {
-    	
+
         $place = new \Model\PlaceModel();
 
         $nowinfo = $place -> relation(true) -> fetchData();
@@ -33,11 +33,11 @@ class PlaceController extends Controller {
 
 
            if($place -> relation(true) -> add($data)){
-                $this ->success('添加商品成功', U('showlist'), 2);
+                $this ->success('添加广告位成功', U('showlist'), 2);
             }else{
-                $this ->error('添加商品失败', U('tianjia'), 2);
+                $this ->error($place->getError(), U('tianjia'), 2);
             }
- 
+
         } else{
 
             $cate = new \Model\CategoryModel();
@@ -52,7 +52,7 @@ class PlaceController extends Controller {
     }
 
     public function upd() {
-    	
+
         $place = new \Model\PlaceModel();
 
         if(IS_POST) {
@@ -63,12 +63,12 @@ class PlaceController extends Controller {
             if($place-> relation(true) ->save($data)){
                 $this -> success('修改广告位成功', U('showlist'), 2);
             }else{
-                $this -> error('修改广告位失败', U('upd',array('id'=>$data['placeid'])), 10);                
+                $this -> error('修改广告位失败', U('upd',array('id'=>$data['placeid'])), 10);
             }
 
         } else{
-            
-            $placeid = I('get.placeid'); 
+
+            $placeid = I('get.placeid');
             $info = $place ->find($placeid);
             $cateinfo = D('Category') -> order('cateid') -> select();
 

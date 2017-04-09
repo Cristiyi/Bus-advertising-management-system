@@ -1,0 +1,404 @@
+[ 2017-04-10T00:09:04+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Chenei/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021890s ]
+SQL: SHOW COLUMNS FROM `place` [ RunTime:0.1031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `place` WHERE ( status='未租出' and catename='车内广告' ) LIMIT 1   [ RunTime:0.0509s ]
+SQL: SELECT `placeid`,`placeno`,`catename`,`status`,`location`,`price`,`description`,`adverno` FROM `place` WHERE ( status='未租出' and catename='车内广告' ) ORDER BY placeid LIMIT 0,2   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant location - assumed 'location' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant location - assumed 'location' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.030476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.030599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001498s ]
+
+[ 2017-04-10T00:09:13+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Cheshen/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `place` [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `place` WHERE ( status='未租出' and catename='车身广告' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `placeid`,`placeno`,`catename`,`status`,`location`,`price`,`description`,`adverno` FROM `place` WHERE ( status='未租出' and catename='车身广告' ) ORDER BY placeid LIMIT 0,2   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\aae83a1177a4f25d5af0d445a007b028.php 第 148 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\aae83a1177a4f25d5af0d445a007b028.php 第 148 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\aae83a1177a4f25d5af0d445a007b028.php 第 149 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\aae83a1177a4f25d5af0d445a007b028.php 第 149 行.
+NOTIC: [8] Use of undefined constant location - assumed 'location' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\aae83a1177a4f25d5af0d445a007b028.php 第 149 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\aae83a1177a4f25d5af0d445a007b028.php 第 149 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\aae83a1177a4f25d5af0d445a007b028.php 第 148 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\aae83a1177a4f25d5af0d445a007b028.php 第 148 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\aae83a1177a4f25d5af0d445a007b028.php 第 149 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\aae83a1177a4f25d5af0d445a007b028.php 第 149 行.
+NOTIC: [8] Use of undefined constant location - assumed 'location' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\aae83a1177a4f25d5af0d445a007b028.php 第 149 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\aae83a1177a4f25d5af0d445a007b028.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2017-04-10T00:09:20+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Zhanpai/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `place` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `place` WHERE ( status='未租出' and catename='站牌广告' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `placeid`,`placeno`,`catename`,`status`,`location`,`price`,`description`,`adverno` FROM `place` WHERE ( status='未租出' and catename='站牌广告' ) ORDER BY placeid LIMIT 0,2   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\d9712234057a7847ae2c1bac8e606bc0.php 第 148 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\d9712234057a7847ae2c1bac8e606bc0.php 第 148 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\d9712234057a7847ae2c1bac8e606bc0.php 第 149 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\d9712234057a7847ae2c1bac8e606bc0.php 第 149 行.
+NOTIC: [8] Use of undefined constant location - assumed 'location' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\d9712234057a7847ae2c1bac8e606bc0.php 第 149 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\d9712234057a7847ae2c1bac8e606bc0.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001841s ]
+
+[ 2017-04-10T00:09:35+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Youshi/youshi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2017-04-10T00:09:53+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2017-04-10T00:10:42+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Chenei/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `place` [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `place` WHERE ( status='未租出' and catename='车内广告' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `placeid`,`placeno`,`catename`,`status`,`location`,`price`,`description`,`adverno` FROM `place` WHERE ( status='未租出' and catename='车内广告' ) ORDER BY placeid LIMIT 0,2   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant location - assumed 'location' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant location - assumed 'location' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2017-04-10T00:12:58+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Chenei/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `place` [ RunTime:0.0513s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `place` WHERE ( status='未租出' and catename='车内广告' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `placeid`,`placeno`,`catename`,`status`,`location`,`price`,`description`,`adverno` FROM `place` WHERE ( status='未租出' and catename='车内广告' ) ORDER BY placeid LIMIT 0,2   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant location - assumed 'location' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant location - assumed 'location' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
+
+[ 2017-04-10T00:13:10+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2017-04-10T00:27:55+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.048031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.048199s ]
+
+[ 2017-04-10T00:28:01+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001215s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2017-04-10T00:28:09+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2017-04-10T00:30:53+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2017-04-10T00:35:01+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018243s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2017-04-10T00:48:50+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002130s ]
+
+[ 2017-04-10T00:51:01+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001147s ]
+
+[ 2017-04-10T00:53:56+08:00 ] ::1 /zhangjiakou/bus/index.php/Home/Chenei/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `place` [ RunTime:0.0340s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `place` WHERE ( status='未租出' and catename='车内广告' ) LIMIT 1   [ RunTime:0.0422s ]
+SQL: SELECT `placeid`,`placeno`,`catename`,`status`,`location`,`price`,`description`,`adverno` FROM `place` WHERE ( status='未租出' and catename='车内广告' ) ORDER BY placeid LIMIT 0,2   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant location - assumed 'location' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 147 行.
+NOTIC: [8] Use of undefined constant placeid - assumed 'placeid' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant catename - assumed 'catename' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant location - assumed 'location' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\WWW\zhangjiakou\bus\Runtime\Cache\Home\10342dff8c41d598652fea37b5b6cdc7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001034s ]
+

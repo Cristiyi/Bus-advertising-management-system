@@ -87,6 +87,37 @@ class AdminController extends Controller {
 
     }
 
+    public function updpassword() {
+
+        $employee = new \Model\AdminModel;
+
+        if(IS_POST) {
+
+            $data = $employee -> create();
+
+            if($employee -> save($data)) {
+
+                $this -> success('修改成功',U('Index/index'),2);
+
+            } else {
+
+                $this -> error('修改失败',U('updpassword',array('id' => $data['adminid'])),3);
+
+            }
+
+        } else {
+
+            $adminid = I('get.adminid');
+
+            $info = $employee -> find($adminid);
+
+            $this -> assign('info',$info);
+            $this -> display();
+
+        }
+
+    }
+
     public function tianjia() {
 
         $employee = new \Model\AdminModel;

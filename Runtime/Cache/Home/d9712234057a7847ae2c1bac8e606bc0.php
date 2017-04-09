@@ -68,6 +68,17 @@ tylesheet" type="text/css" href="<?php echo (C("CSS_URL")); ?>/ie7.css"><![endif
 
 </style>
 </head>
+<body class="home"><!--Header-->
+<div class="full-width-wrapper" id="header">
+  <div class="full-width-wrapper" id="abstract-bg"><!--Banner-->
+    <div class="fixed-width-wrapper" id="banner">
+      <a href="index.html" title="" class="logo"><img src="<?php echo (C("IMG_URL")); ?>/logo2.png" alt="Maxx - The Modern HTML template"></a>
+     <!--/Banner--> <!--<ul class="social-network">
+      <li><a href="#" title="Facebook"><img src="<?php echo (C("IMG_URL")); ?>/icons/facebook.png" alt=""></a></li>
+    <li><a href="#" title="Twitter"><img src="<?php echo (C("IMG_URL")); ?>/icons/twitter.png" alt=""></a></li>
+    <li><a href="#" title="Delicious"><img src="<?php echo (C("IMG_URL")); ?>/icons/delicious.png" alt=""></a></li>
+    </ul>-->
+  </div><!--/Banner--><!--Navigation + Search-->
 <div class="fixed-width-wrapper border-radius-5px" id="navigation-bar">
     <div id="g-navigation"><ul class="simple-drop-down-menu">
       <li class="home-page current border-radius-left-5px"><a href="<?php echo U('Index/index');?>">首页</a></li>

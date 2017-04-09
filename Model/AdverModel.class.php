@@ -2,15 +2,15 @@
 
 namespace Model;
 use Think\Model;
-use Think\Model\RelationModel; 
 
 
-class AdverModel extends RelationModel {
+
+class AdverModel extends Model {
 
     protected $_link = array(
 
         'Place' => array(
-                
+
                 'mapping_type' => BELONGS_TO,
                 'foreigh_key' => 'placeid',
                 'mapping_name' => 'place',
@@ -19,6 +19,16 @@ class AdverModel extends RelationModel {
         	),
 
     	);
+
+    protected $_validate = array(
+
+        array('adverno','require','此项为必填项'),
+        array('adverno','','广告编号已存在',0,'unique',1),
+        array('starttime','require','此项为必填项'),
+        array('endtime','require','此项为必填项'),
+        array('catename','require','此项为必填项'),
+
+        );
 
     protected function _before_insert(&$data, $options) {
 

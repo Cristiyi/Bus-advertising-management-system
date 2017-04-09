@@ -35,7 +35,7 @@ class CategoryController extends Controller {
 
     		} else {
 
-    			$this > error('添加类型失败',U('tianjia'),2);
+    			$this > error($cate->getError(),U('tianjia'),2);
 
     		}
 
@@ -64,7 +64,7 @@ class CategoryController extends Controller {
     			$this -> error('修改类型失败',U('upd',array('id' => $data['cateid'])),2);
 
     		}
- 
+
     	} else {
 
     		$id = I('get.cateid');

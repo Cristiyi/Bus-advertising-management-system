@@ -29,6 +29,14 @@
     body {
       background:url({$Think.config.IMG_URL}/bus_safe.jpg) repeat;
     }
+     .pages{
+    position:absolute;
+    left:40%;
+    bottom:-200px;
+    font-size:20px;
+    color:red;
+  }
+
     </style>
 </head>
 
@@ -71,9 +79,9 @@
       </div>
     </div><!--/Navigation + Search-->
   </div>
-
+<h2>我的订单</h2>
   <table class="table table-striped">
-  <caption>我的订单</caption>
+
   <thead>
     <tr>
       <th>公司名称</th>
@@ -104,9 +112,11 @@
   </tbody>
 </table>
 
-<div class="pages">
+<div class="pages" style="color:red;font-size:50px;">
     {$page}
 </div>
+
+
 
 </body>
 </html>

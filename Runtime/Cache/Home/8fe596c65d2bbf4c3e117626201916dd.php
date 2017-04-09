@@ -6,9 +6,7 @@
 <meta name="keywords" content="道闸广告,武汉道闸广告,恒盛文广,广告道闸" />
 <meta name="description" content="道闸广告,武汉道闸广告,恒盛文广,广告道闸" />
 <title>恒盛文广</title>
-<link href="<?php echo (C("CSS_URL")); ?>/bootstrap.min.css" rel="stylesheet">
-<link href="<?php echo (C("CSS_URL")); ?>/dashboard.css" rel="stylesheet">
-<link href="<?php echo (C("CSS_URL")); ?>/mypage.css" rel="stylesheet">
+
 <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS_URL")); ?>/reset.css">
 <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS_URL")); ?>/base.css">
 <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS_URL")); ?>/tipTip.css">
@@ -58,38 +56,31 @@
             width: 800px;
         }
 
-		/*.main input {
-			border-radius: 6px;
-		}*/
-
-        .info
-        {
-            margin-bottom: 20px;
-            font-size: 21px;
-            line-height: 40px;
-            color: #333;
-            border: 0;
-            border-bottom: 1px solid #e5e5e5;
+		.simple-drop-down-menu {
+            height:30px;
+            padding-top:-30px;
         }
+
+
 </style>
 </head>
-<body>
-	<body class="home"><!--Header-->
+
+<body class="home"><!--Header-->
 <div class="full-width-wrapper" id="header">
   <div class="full-width-wrapper" id="abstract-bg"><!--Banner-->
     <div class="fixed-width-wrapper" id="banner">
       <a href="index.html" title="" class="logo"><img src="<?php echo (C("IMG_URL")); ?>/logo2.png" alt="Maxx - The Modern HTML template"></a>
      <!--/Banner--> <!--<ul class="social-network">
-        <li><a href="#" title="Facebook"><img src="<?php echo (C("IMG_URL")); ?>/icons/facebook.png" alt=""></a></li>
-        <li><a href="#" title="Twitter"><img src="<?php echo (C("IMG_URL")); ?>/icons/twitter.png" alt=""></a></li>
-        <li><a href="#" title="Delicious"><img src="<?php echo (C("IMG_URL")); ?>/icons/delicious.png" alt=""></a></li>
-      </ul>-->
-    </div><!--/Banner--><!--Navigation + Search-->
-    <div class="fixed-width-wrapper border-radius-5px" id="navigation-bar">
-        <div id="g-navigation"><ul class="simple-drop-down-menu">
+      <li><a href="#" title="Facebook"><img src="<?php echo (C("IMG_URL")); ?>/icons/facebook.png" alt=""></a></li>
+    <li><a href="#" title="Twitter"><img src="<?php echo (C("IMG_URL")); ?>/icons/twitter.png" alt=""></a></li>
+    <li><a href="#" title="Delicious"><img src="<?php echo (C("IMG_URL")); ?>/icons/delicious.png" alt=""></a></li>
+    </ul>-->
+  </div><!--/Banner--><!--Navigation + Search-->
+<div class="fixed-width-wrapper border-radius-5px" id="navigation-bar">
+    <div id="g-navigation"><ul class="simple-drop-down-menu">
           <li class="home-page current border-radius-left-5px"><a href="<?php echo U('Index/index');?>">首页</a></li>
           <li><a href="<?php echo U('About/about');?>" title="">公司简介</a></li>
-          <li><a href="<?php echo U('Chenei/showlist');?>" title="">广告预约</a>
+          <li><a href="<?php echo U('Chenei/showlist');?>" title="">广告预约</a></li>
             <ul>
                <li><a href="<?php echo U('Chenei/showlist');?>" title="">车内广告</a></li>
                <li><a href="<?php echo U('Cheshen/showlist');?>" title="">车身广告</a></li>
@@ -106,7 +97,7 @@
           <?php } else { ?>
             <li class="myname"><a href=""><?php echo (session('username')); ?></a></li>
             <li class=""><a href="<?php echo U('Order/showlist');?>" title="">我的订单</a></li>
-            <li class=""><a href="<?php echo U('User/logout');?>" title="">注销</a></li>
+            <li class=""><a href="<?php echo U('User/logout');?>" title="">注销</a></li></ul>
         <?php  } ?>
             </div>
 
@@ -212,5 +203,8 @@
         </form>
     </div>
 
+     <!--/尾--><!--Footer Extra-->
+    <div class="full-width-wrapper" id="footer-extra-wrapper"><div class="fixed-width-wrapper"><div id="copyright"><a href="#" class="logo float-left" title=""><img src="<?php echo (C("IMG_URL")); ?>/logo-foot1.png" alt=""></a><ul><li>(c) 2011 Allright reservred </li><li><a href="#" title="">Privacy Policy</a></li><li><a href="#" title="">Terms and Conditions</a></li></ul><a href="#" class="back-to-top sprite" title="Back to top">Back to top</a></div></div></div>
+    <!--/尾结束-->
 </body>
 </html>
